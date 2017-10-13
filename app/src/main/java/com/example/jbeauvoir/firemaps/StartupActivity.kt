@@ -1,5 +1,6 @@
 package com.example.jbeauvoir.firemaps
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
@@ -29,8 +30,8 @@ class StartupActivity : AppCompatActivity() {
         setContentView(R.layout.activity_startup)
 
         mapButton.setOnClickListener { view ->
-            Toast.makeText(this@StartupActivity, "Link to MapActivity", Toast.LENGTH_SHORT)
-                    .show()
+            val mapIntent = Intent(this@StartupActivity, MapsActivity::class.java)
+            startActivity(mapIntent)
         }
 
         chatButton.setOnClickListener { view ->
