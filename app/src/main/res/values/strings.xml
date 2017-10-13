@@ -1,4 +1,13 @@
 <resources>
+    <!--SHARED-->
     <string name="app_name">FireMaps</string>
+
+    <!--STARTUP_ACTIVITY-->
+    <string name="title_activity_startup">FireMaps</string>
+    <string name="view_map_button">View Map</string>
+    <string name="view_chat_button">Chat</string>
+
+    <!--MAP ACTIVITY-->
     <string name="title_activity_maps">Fire_Map</string>
+
 </resources>
