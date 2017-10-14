@@ -1,4 +1,4 @@
-package com.example.jbeauvoir.firemaps;
+package com.jbeauvoir.firemaps;
 
 import org.junit.Test;
 
