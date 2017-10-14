@@ -1,4 +1,4 @@
-package com.example.jbeauvoir.firemaps;
+package com.jbeauvoir.firemaps;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.jbeauvoir.firemaps", appContext.getPackageName());
+        assertEquals("com.jbeauvoir.firemaps", appContext.getPackageName());
     }
 }
