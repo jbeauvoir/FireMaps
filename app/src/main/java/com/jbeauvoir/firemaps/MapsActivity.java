@@ -50,7 +50,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLngBounds latLngBounds = mMap.getProjection().getVisibleRegion().latLngBounds;
         MapsRestClientUser mapsRestClientUser = new MapsRestClientUser();
         try {
-            mapsRestClientUser.getMapLayer(llb);
+            mapsRestClientUser.getMapLayer(latLngBounds);
         } catch (JSONException e) {
             e.printStackTrace();
         }
