@@ -1,4 +1,4 @@
-package com.example.jbeauvoir.firemaps
+package com.jbeauvoir.firemaps
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,8 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_startup.*
 
 /**
- * Created by tholland1 on 13/10/17.
+ * Launch Activity
+ * The home page; contains links to the Map and Chat
  */
 
 class StartupActivity : AppCompatActivity() {

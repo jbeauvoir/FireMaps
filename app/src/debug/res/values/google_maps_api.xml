@@ -4,7 +4,7 @@
 
     To get one, follow this link, follow the directions and press "Create" at the end:
 
-    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=5C:C5:B4:9C:FC:2A:30:80:CE:78:17:5B:D5:71:CA:9C:FB:25:46:B7%3Bcom.example.jbeauvoir.firemaps
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=5C:C5:B4:9C:FC:2A:30:80:CE:78:17:5B:D5:71:CA:9C:FB:25:46:B7%3Bcom.jbeauvoir.firemaps
 
     You can also add your credentials to an existing key, using these values:
 

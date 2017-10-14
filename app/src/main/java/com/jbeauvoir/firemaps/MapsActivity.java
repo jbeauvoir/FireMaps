@@ -1,4 +1,4 @@
-package com.example.jbeauvoir.firemaps;
+package com.jbeauvoir.firemaps;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
