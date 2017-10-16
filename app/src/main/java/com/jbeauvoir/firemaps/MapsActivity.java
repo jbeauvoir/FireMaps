@@ -2,13 +2,17 @@ package com.jbeauvoir.firemaps;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.loopj.android.http.*;
+import org.json.JSONException;
+
+import cz.msebera.android.httpclient.Header;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -39,8 +43,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng home = new LatLng(38.45, -122.60);
+
+        mMap.addMarker(new MarkerOptions().position(home).title("Marker in Santa Rosa"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(home));
+        LatLngBounds latLngBounds = mMap.getProjection().getVisibleRegion().latLngBounds;
+        MapsRestClientUser mapsRestClientUser = new MapsRestClientUser();
+        try {
+            mapsRestClientUser.getMapLayer(latLngBounds);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 }
